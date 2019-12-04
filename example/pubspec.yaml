@@ -1,0 +1,23 @@
+name: nav_router_example
+description: Demonstrates how to use the nav_router plugin.
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  nav_router:
+    path: ../
+
+flutter:
+
+  uses-material-design: true
