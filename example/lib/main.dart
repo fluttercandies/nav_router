@@ -31,7 +31,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: new AppBar(),
       body: new Center(
         child: new FlatButton(
-          onPressed: () => routePushName('one'),
+//          onPressed: () => routePushName('one'),
+        onPressed: () => routePush(new PageOne()),
           child: new Text('push test'),
         ),
       ),

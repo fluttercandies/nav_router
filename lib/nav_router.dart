@@ -9,4 +9,4 @@
  */
 library nav_router;
 
-export 'util/route.dart';
+export 'package:nav_router/src/commom.dart';
