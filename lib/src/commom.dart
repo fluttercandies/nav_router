@@ -50,7 +50,6 @@ void popToRootPage() {
   navGK.currentState.popUntil(ModalRoute.withName('/'));
 }
 
-
 /// ```dart
 ///   popUntil(ModalRoute.withName('/login'));
 /// ```
@@ -64,6 +63,11 @@ void removeRoute(Route<dynamic> route) {
 
 void removeRouteBelow(Route<dynamic> anchorRoute) {
   return navGK.currentState.removeRouteBelow(anchorRoute);
+}
+
+void replaceRouter<T extends Object>(
+    {@required Route<dynamic> oldRoute, @required Route<T> newRoute}) {
+  return navGK.currentState.replace(oldRoute: oldRoute, newRoute: newRoute);
 }
 
 bool pop([result]) {
