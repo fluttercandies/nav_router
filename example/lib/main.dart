@@ -9,6 +9,11 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: 'nav_route',
       navigatorKey: navGK,
+      routes: {
+        'one': (context) {
+          return PageOne();
+        }
+      },
       home: new MyHomePage(),
     );
   }
@@ -26,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: new AppBar(),
       body: new Center(
         child: new FlatButton(
-          onPressed: () => routePush(new PageOne()),
+          onPressed: () => routePushName('one'),
           child: new Text('push test'),
         ),
       ),
