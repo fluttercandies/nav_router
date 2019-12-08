@@ -19,6 +19,11 @@ Future<dynamic> maybePop([result]) {
   return navGK.currentState.maybePop(result ?? '');
 }
 
+Future<dynamic> pushReplacementNamed(routeName, [result]) {
+  return navGK.currentState
+      .pushReplacementNamed(routeName, result: result ?? '');
+}
+
 Future<dynamic> popAndPushNamed(name, [result]) {
   return navGK.currentState.popAndPushNamed(name, result: result ?? '');
 }
@@ -45,8 +50,20 @@ void popToRootPage() {
   navGK.currentState.popUntil(ModalRoute.withName('/'));
 }
 
+
+/// ```dart
+///   popUntil(ModalRoute.withName('/login'));
+/// ```
 void popUntil(RoutePredicate predicate) {
   return navGK.currentState.popUntil(predicate);
+}
+
+void removeRoute(Route<dynamic> route) {
+  return navGK.currentState.removeRoute(route);
+}
+
+void removeRouteBelow(Route<dynamic> anchorRoute) {
+  return navGK.currentState.removeRouteBelow(anchorRoute);
 }
 
 bool pop([result]) {
