@@ -35,6 +35,9 @@ Future<dynamic> pushAndRemoveUntil(Widget page,
       .pushAndRemoveUntil(route, (Route<dynamic> route) => false);
 }
 
+///```dart
+/// pushNamedAndRemoveUntil("/screen4",ModalRoute.withName('/')
+/// ```
 Future<dynamic> pushNamedAndRemoveUntil(String newRouteName) {
   return navGK.currentState
       .pushNamedAndRemoveUntil(newRouteName, (Route<dynamic> route) => false);
