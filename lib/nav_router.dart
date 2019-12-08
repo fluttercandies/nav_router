@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/services.dart';
+export 'util/route.dart';
 
 class NavRouter {
   static const MethodChannel _channel =
