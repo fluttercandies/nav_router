@@ -8,6 +8,7 @@ enum Type {
   slide,
   scale,
   rotation,
+  size,
 }
 
 final navGK = new GlobalKey<NavigatorState>();
@@ -29,6 +30,9 @@ Future<dynamic> routePush(Widget widget, [Type type = Type.cupertino]) {
       break;
     case Type.rotation:
       route = rotation(widget);
+      break;
+    case Type.size:
+      route = size(widget);
       break;
   }
   return navGK.currentState.push(route);

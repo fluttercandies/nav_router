@@ -33,3 +33,7 @@ Route scale(widget) {
 Route rotation(widget) {
   return RotationRoute(page: widget);
 }
+
+Route size(widget) {
+  return SizeRoute(page: widget);
+}
