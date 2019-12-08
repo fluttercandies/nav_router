@@ -6,6 +6,7 @@ enum RouterType {
   rotation,
   size,
   fade,
+  scaleRotate,
 }
 
 enum AdvanceType {

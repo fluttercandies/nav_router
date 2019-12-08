@@ -32,8 +32,9 @@ class _MyHomePageState extends State<MyHomePage> {
       body: new Center(
         child: new FlatButton(
 //          onPressed: () => routePushName('one'),
-          onPressed: () => routePushAdvance(
-              exitPage: new MyHomePage(), enterPage: new PageOne()),
+//          onPressed: () => routePushAdvance(
+//              exitPage: new MyHomePage(), enterPage: new PageOne()),
+        onPressed: () => routePush(new PageOne(),RouterType.scaleRotate),
           child: new Text('push test'),
         ),
       ),

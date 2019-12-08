@@ -26,6 +26,9 @@ Route routerUtil({RouterType type, widget}) {
     case RouterType.fade:
       route = fade(widget);
       break;
+    case RouterType.scaleRotate:
+      route = scaleRotate(widget);
+      break;
   }
 
   return route;

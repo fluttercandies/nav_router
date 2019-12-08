@@ -41,3 +41,7 @@ Route size(widget) {
 Route fade(widget) {
   return FadeRoute(page: widget);
 }
+
+Route scaleRotate(widget) {
+  return ScaleRotateRoute(page: widget);
+}

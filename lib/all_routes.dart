@@ -6,3 +6,4 @@ export 'package:nav_router/routers/rotation.dart';
 export 'package:nav_router/routers/size.dart';
 export 'package:nav_router/routers/fade.dart';
 export 'package:nav_router/advanced/advance_slide.dart';
+export 'package:nav_router/routers/scale_rotate.dart';
