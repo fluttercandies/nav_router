@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nav_router/routers/all_routes.dart';
+import 'package:nav_router/all_routes.dart';
 
 Route cupertinoRoute(widget) {
   return new CupertinoPageRoute(
@@ -36,4 +36,8 @@ Route rotation(widget) {
 
 Route size(widget) {
   return SizeRoute(page: widget);
+}
+
+Route fade(widget) {
+  return FadeRoute(page: widget);
 }
