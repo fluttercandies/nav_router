@@ -11,12 +11,6 @@ Future<dynamic> routePush(Widget widget,
   return navGK.currentState.push(route);
 }
 
-Future<dynamic> routePushAdvance(Widget widget,
-    [RouterType type = RouterType.cupertino]) {
-  Route route = routerUtil(type: type, widget: widget);
-  return navGK.currentState.push(route);
-}
-
 Future<dynamic> routePushName(String name) {
   return navGK.currentState.pushNamed(name);
 }

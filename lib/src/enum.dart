@@ -8,6 +8,6 @@ enum RouterType {
   fade,
 }
 
-enum Advance {
+enum AdvanceType {
   slide,
 }

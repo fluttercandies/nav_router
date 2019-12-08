@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nav_router/all_routes.dart';
 import 'package:nav_router/src/enum.dart';
 
-Route routerUtil({type, widget}) {
+Route routerUtil({RouterType type, widget}) {
   Route route;
   switch (type) {
     case RouterType.material:
@@ -25,6 +25,17 @@ Route routerUtil({type, widget}) {
       break;
     case RouterType.fade:
       route = fade(widget);
+      break;
+  }
+
+  return route;
+}
+
+Route advanceUtil({AdvanceType type, exitPage, enterPage}) {
+  Route route;
+  switch (type) {
+    case AdvanceType.slide:
+      route = advanceSlide(exitPage: exitPage, enterPage: enterPage);
       break;
   }
 

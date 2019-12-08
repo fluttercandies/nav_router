@@ -11,3 +11,4 @@ library nav_router;
 
 export 'package:nav_router/src/commom.dart';
 export 'package:nav_router/src/enum.dart';
+export 'package:nav_router/src/common_advance.dart';
