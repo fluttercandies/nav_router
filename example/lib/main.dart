@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //          onPressed: () => routePushName('one'),
 //          onPressed: () => routePushAdvance(
 //              exitPage: new MyHomePage(), enterPage: new PageOne()),
-        onPressed: () => routePush(new PageOne(),RouterType.scaleRotate),
+        onPressed: () => pushAndRemoveUntil(new PageOne(),RouterType.fade),
           child: new Text('push test'),
         ),
       ),
