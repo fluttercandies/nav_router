@@ -1,17 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nav_router/src/router.dart';
+import 'package:nav_router/routers/all_routes.dart';
 
 enum Type {
   material,
   cupertino,
   slide,
+  scale,
+  rotation,
 }
 
 final navGK = new GlobalKey<NavigatorState>();
 
-Future<dynamic> routePush(Widget widget,
-    [Type type = Type.cupertino]) {
+Future<dynamic> routePush(Widget widget, [Type type = Type.cupertino]) {
   Route route;
   switch (type) {
     case Type.material:
@@ -22,6 +23,12 @@ Future<dynamic> routePush(Widget widget,
       break;
     case Type.slide:
       route = slide(widget);
+      break;
+    case Type.scale:
+      route = scale(widget);
+      break;
+    case Type.rotation:
+      route = rotation(widget);
       break;
   }
   return navGK.currentState.push(route);

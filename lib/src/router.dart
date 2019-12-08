@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nav_router/routers/slide.dart';
+import 'package:nav_router/routers/all_routes.dart';
 
 Route cupertinoRoute(widget) {
   return new CupertinoPageRoute(
@@ -24,4 +24,12 @@ Route materialRoute(widget) {
 
 Route slide(widget) {
   return SlideRightRoute(page: widget);
+}
+
+Route scale(widget) {
+  return ScaleRoute(page: widget);
+}
+
+Route rotation(widget) {
+  return RotationRoute(page: widget);
 }
