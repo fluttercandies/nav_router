@@ -70,6 +70,12 @@ void replaceRouter<T extends Object>(
   return navGK.currentState.replace(oldRoute: oldRoute, newRoute: newRoute);
 }
 
+void replaceRouteBelow<T extends Object>(
+    {@required Route<dynamic> anchorRoute, Route<T> newRoute}) {
+  return navGK.currentState
+      .replaceRouteBelow(anchorRoute: anchorRoute, newRoute: newRoute);
+}
+
 bool pop([result]) {
   return navGK.currentState.pop(result ?? '');
 }
