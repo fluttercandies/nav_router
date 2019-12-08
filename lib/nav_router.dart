@@ -1,14 +1,12 @@
-import 'dart:async';
 
-import 'package:flutter/services.dart';
+/*
+ * nav_router
+ * Created by CrazyQ1
+ * https://www.flutterj.com
+ *
+ * Copyright (c) 2019 CrazyQ1. All rights reserved.
+ * See LICENSE for distribution and usage details.
+ */
+library nav_router;
+
 export 'util/route.dart';
-
-class NavRouter {
-  static const MethodChannel _channel =
-      const MethodChannel('nav_router');
-
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
-  }
-}
