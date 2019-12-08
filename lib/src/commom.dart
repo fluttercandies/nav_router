@@ -2,22 +2,26 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nav_router/src/router.dart';
 
-enum TransitionType {
+enum Type {
   material,
   cupertino,
+  slide,
 }
 
 final navGK = new GlobalKey<NavigatorState>();
 
 Future<dynamic> routePush(Widget widget,
-    [TransitionType type = TransitionType.cupertino]) {
+    [Type type = Type.cupertino]) {
   Route route;
   switch (type) {
-    case TransitionType.material:
+    case Type.material:
       route = materialRoute(widget);
       break;
-    case TransitionType.cupertino:
+    case Type.cupertino:
       route = cupertinoRoute(widget);
+      break;
+    case Type.slide:
+      route = slide(widget);
       break;
   }
   return navGK.currentState.push(route);
