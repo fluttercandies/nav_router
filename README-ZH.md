@@ -50,7 +50,7 @@ routePush(new NewPage(), RouterType.fade);
 
 # Flutter微信群
 
-<img src="http://www.flutterj.com/content/uploadfile/201903/64821551854137.png" height="300" width="300" style="zoom:30%;" />
+<img src="http://www.flutterj.com/content/uploadfile/201903/64821551854137.png" height="200" width="200" style="zoom:30%;" />
 
 # 公众号
 <img src="http://www.flutterj.com/public.jpg" height="200" width="200" style="zoom:30%;" />
