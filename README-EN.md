@@ -49,6 +49,11 @@ Widget buildItem(RouteModel item) {
 routePush(new NewPage(), RouterType.fade);
 ```
 
+# Effect map
+|![1.gif](git/1.gif)| ![2.gif](git/2.gif) | ![3.gif](git/3.gif)|
+| --- | --- | --- |
+|![4.gif](git/4.gif)| ![5.gif](git/5.gif) | ![6.gif](git/6.gif)|
+|![7.gif](git/7.gif)| ![8.gif](git/8.gif) | ![9.gif](git/9.gif)|
 
 # Flutter WeChat group
 
