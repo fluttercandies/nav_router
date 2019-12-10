@@ -1,3 +1,5 @@
+Language: [English](README.md) | [中文简体](README-ZH.md)
+
 # nav_router
 
 A new flutter plugin project.
