@@ -50,10 +50,10 @@ routePush(new NewPage(), RouterType.fade);
 ```
 
 # 效果图
-|![1.gif](git/1.gif)| ![2.gif](https://github.com/fluttercandies/wechat_flutter/blob/master/assets/git/2.gif) | ![3.gif](https://github.com/fluttercandies/wechat_flutter/blob/master/assets/git/3.gif)|
-| --- | --- | --- |
-| ![4.gif](https://github.com/fluttercandies/wechat_flutter/blob/master/assets/git/4.gif) | ![5.gif](https://github.com/fluttercandies/wechat_flutter/blob/master/assets/git/5.gif) | ![6.gif](https://github.com/fluttercandies/wechat_flutter/blob/master/assets/git/6.gif) |
-| ![7.gif](https://github.com/fluttercandies/wechat_flutter/blob/master/assets/git/7.gif) | ![8.gif](https://github.com/fluttercandies/wechat_flutter/blob/master/assets/git/8.gif) | ![9.gif](https://github.com/fluttercandies/wechat_flutter/blob/master/assets/git/9.gif) |
+|![1.gif](git/1.gif)| ![2.gif](git/2.gif) |
+|![3.gif](git/3.gif)| ![4.gif](git/4.gif) |
+|![5.gif](git/5.gif)| ![6.gif](git/6.gif) |
+|![5.gif](git/7.gif)| ![6.gif](git/8.gif) |
 
 # Flutter微信群
 
