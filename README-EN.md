@@ -4,27 +4,28 @@ Language: [English](README-EN.md) | [中文简体](README.md)
 
 nav_router is the simplest / lightweight / convenient routing management solution for flutter. It supports various routing animations, and it is very convenient to jump / pass parameters. To jump to a new page, just routePush (NewPage ());
 
-## 开始使用
+## Getting started
 
-### 添加依赖
+### Add dependency
 ```yaml
 dependencies:
-  nav_router: any #具体版本自定义（any表示最新）
+  nav_router: any #Specific version customization (any means latest)
 ```
 
-> 相关文章更新中..
+> Related articles updated ...
 
-然后使用`flutter packages upgrade`来更新flutter的插件包
+Then use `flutter packages upgrade` to update flutter plugin packages
 
-# 示例项目
-example文件夹中有一个非常漂亮的示例项目。看看这个。否则，请继续阅读以启动并运行。
+# Sample project
 
-# 配置
-*  1.在`MaterialApp`的页面先导入我们的插件
+There is a pretty sweet example project in the example folder. Check it out. Otherwise, keep reading to get up and running.
+
+# Setting up
+*  1.Import our plugin on the page of `MaterialApp`
 ```dart
 import 'package:nav_router/nav_router.dart';
 ```
-*  2.在`MaterialApp`的`navigatorKey`属性写上`navGK`值
+*  2.Write `navGK` value in` navigatorKey` property of `MaterialApp`
 ```dart
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -33,33 +34,33 @@ import 'package:nav_router/nav_router.dart';
     );
   }
 ```
-* 3.然后，我们就可以开始使用啦，下面是一个跳转页面的例子
+* 3.Then, we can start using it, here is an example of a jump page
 ```dart
 Widget buildItem(RouteModel item) {
   return new FlatButton(
     onPressed: () => routePush(new NewPage()),
-    child: new Text('点击跳转'),
+    child: new Text('Click to jump'),
   );
 }
 ```
 
-* 4.如果我们想用其他路由动画跳转可以在后面添加跳转属性,比如：渐变动画
+* 4.If we want to use other routing animations to jump, we can add jump properties later, such as: gradient animation
 ```dart
 routePush(new NewPage(), RouterType.fade);
 ```
 
 
-# Flutter微信群
+# Flutter WeChat group
 
 <img src="http://www.flutterj.com/content/uploadfile/201903/64821551854137.png" height="200" width="200" style="zoom:30%;" />
 
-Flutter教程网：www.flutterj.com
+FlutterJ：www.flutterj.com
 
-# 公众号
+# the public
 <img src="http://www.flutterj.com/public.jpg" height="200" width="200" style="zoom:30%;" />
 
-关注公众号“`Flutter前线`”，各种Flutter项目实战经验技巧，干活知识，Flutter面试题答案，等你来领取。
+Pay attention to the public account "`Flutter前线`", practical experience and skills of various Flutter projects, work knowledge, and answers to Flutter interview questions, waiting for you to collect them.
 
-# 贡献者
+# Contributor
 
 <img src="http://www.flutterj.com/circle-cropped.png" height="150" width="150" style="zoom:30%;" />
