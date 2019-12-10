@@ -29,6 +29,8 @@ class _MyHomePageState extends State<MyHomePage> {
         color: Color(0xfff7c672),
         padding: EdgeInsets.symmetric(vertical: 50.0),
         onPressed: () => routePush(new NewPage(), item.type),
+//        onPressed: () => routePushAdvance(
+//            exitPage: new MyHomePage(), enterPage: new NewPage()),
         child: new Text(
           item.name,
           style: TextStyle(color: Colors.black),
