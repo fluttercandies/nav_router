@@ -1,9 +1,8 @@
-Language: [English](README.md) | [中文简体](README-ZH.md)
+Language: [English-EN](README.md) | [中文简体](README.md)
 
 # nav_router
 
-flutter最简单/轻量/便捷的路由管理方案，支持各种路由动画，跳转/传参起来非常方便，跳转新页面只需：routePush(NewPage());
-
+nav_router is the simplest / lightweight / convenient routing management solution for flutter. It supports various routing animations, and it is very convenient to jump / pass parameters. To jump to a new page, just routePush (NewPage ());
 
 ## 开始使用
 
