@@ -48,7 +48,7 @@ routePush(new NewPage(), RouterType.fade);
 ```
 
 
-# Flutter微信群
+# Flutter微信群 [Flutter教程网：www.flutterj.com]
 
 <img src="http://www.flutterj.com/content/uploadfile/201903/64821551854137.png" height="200" width="200" style="zoom:30%;" />
 
