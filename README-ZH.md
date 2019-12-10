@@ -1,3 +1,5 @@
+Language: [English](README.md) | [中文简体](README-ZH.md)
+
 # nav_router
 
 flutter最简单/轻量/便捷的路由管理方案，支持各种路由动画，跳转/传参起来非常方便，跳转新页面只需：routePush(NewPage());
