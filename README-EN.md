@@ -1,4 +1,4 @@
-Language: [English-EN](README.md) | [中文简体](README.md)
+Language: [English](README-EN.md) | [中文简体](README.md)
 
 # nav_router
 
