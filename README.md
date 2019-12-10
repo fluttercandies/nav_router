@@ -51,7 +51,7 @@ routePush(new NewPage(), RouterType.fade);
 
 # 效果图
 |![1.gif](git/1.gif)| ![2.gif](git/2.gif) | ![3.gif](git/3.gif)|
-
+| --- | --- | --- |
 
 # Flutter微信群
 
