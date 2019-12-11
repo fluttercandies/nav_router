@@ -61,6 +61,8 @@ routePush(new NewPage(), RouterType.fade);
 
 Flutter教程网：www.flutterj.com
 
+Flutter交流QQ群：[874592746](https://jq.qq.com/?_wv=1027&k=5coTYqE)
+
 # 公众号
 <img src="http://www.flutterj.com/public.jpg" height="200" width="200" style="zoom:30%;" />
 
