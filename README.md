@@ -49,6 +49,53 @@ Widget buildItem(RouteModel item) {
 routePush(new NewPage(), RouterType.fade);
 ```
 
+# 参数传递
+
+## 方式1：
+正常push新页面，但是在后面加上Then，后面的v就是我们跳转之后的页面带回来的数据，然后我们给它打印出来。
+```dart
+routePush(NewPage()).then((v) {
+  print('I received::$v');
+});
+```
+那么我们新页面就要pop返回值了，直接在pop然后括号里加上我们的参数，可以是任何类型的参数值，之后上面写的东西就能接收到我们这次返回并带过去的参数了。
+```dart
+FlatButton(
+  onPressed: () {
+    pop('This is the parameter');
+  },
+  child: Text('Return with parameters'),
+),
+```
+
+## 方式2：
+方式二可以用我们的NavData，先在我们要push到的页面添加NavData类型的参数接收,
+```dart
+class NewPage extends StatlessWidget {
+  final NavData navData;
+
+  NewPage({this.navData});
+}
+```
+然后下面就判断这个navData是否为空，也就是上级是否有接收这个方法，如果有的话就带参数返回。
+```dart
+FlatButton(
+  onPressed: () {
+    if(navData == null) return;
+    widget.navData('NavData mode parameter transmission');
+    pop();
+  },
+  child: Text('Return with parameters'),
+),
+```
+那么我们push的那个地方就可以用navData来接收值并且打印出来了。
+```dart
+routePush(NewPage(navData: (v) {
+    print('I received::$v');
+  }),
+);
+```
+
 # 效果图
 |![1.gif](git/1.gif)| ![2.gif](git/2.gif) | ![3.gif](git/3.gif)|
 | --- | --- | --- |
