@@ -41,7 +41,7 @@ Widget buildItem(RouteModel item) {
     onPressed: () => routePush(new NewPage()),
     child: new Text('点击跳转'),
   );
-}
+} 
 ```
 
 * 4.如果我们想用其他路由动画跳转可以在后面添加跳转属性,比如：渐变动画
