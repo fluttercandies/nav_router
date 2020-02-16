@@ -1,3 +1,14 @@
+/*
+ * nav_router
+ * Created by CrazyQ1
+ * https://www.flutterj.com
+ *
+ * Copyright (c) 2019 CrazyQ1. All rights reserved.
+ * See LICENSE for distribution and usage details.
+ */
+
+/// Here is the way to export all route gradients
+/// You can directly import this single file and over-animate with all the routes inside.
 export 'package:nav_router/src/router.dart';
 export 'package:nav_router/src/router_advanced.dart';
 export 'package:nav_router/routers/scale.dart';

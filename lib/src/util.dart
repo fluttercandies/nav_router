@@ -2,6 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:nav_router/all_routes.dart';
 import 'package:nav_router/src/enum.dart';
 
+/// This function is a wrapper for the route jump animation.
+/// You can directly pass an enumeration method and the page uses this method.
+///
+/// example:
+/// ```dart
+/// routerUtil(type: RouterType.material, widget: NewPage());
+/// ```
+///
 Route routerUtil({RouterType type, widget}) {
   Route route;
   switch (type) {
@@ -34,6 +42,13 @@ Route routerUtil({RouterType type, widget}) {
   return route;
 }
 
+/// It's the same as above, but this is an advanced usage,
+/// you need to pass in the exit page and the data to enter the page.
+///
+/// example:
+/// ```dart
+/// advanceUtil(type: AdvanceType.slide, exitPage: ExitPage(),enterPage: EnterPagePage());
+/// ```
 Route advanceUtil({AdvanceType type, exitPage, enterPage}) {
   Route route;
   switch (type) {
