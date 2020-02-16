@@ -109,11 +109,6 @@ routePush(NewPage(navData: (v) {
 
 FlutterJ：www.flutterj.com
 
-# the public
-<img src="http://www.flutterj.com/public.jpg" height="200" width="200" style="zoom:30%;" />
-
-Pay attention to the public account "`Flutter前线`", practical experience and skills of various Flutter projects, work knowledge, and answers to Flutter interview questions, waiting for you to collect them.
-
 # Contributor
 
 <img src="http://www.flutterj.com/circle-cropped.png" height="150" width="150" style="zoom:30%;" />
