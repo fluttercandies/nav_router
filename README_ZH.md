@@ -4,6 +4,8 @@ Language: [English](README.md) | [中文简体](README_ZH.md)
 
 flutter最简单/轻量/便捷的路由管理方案，支持各种路由动画，跳转/传参起来非常方便，跳转新页面只需：routePush(NewPage());
 
+# Log
+* 2020.02.28 - 修复dev分支flutter的Pop方法出错。
 
 ## 开始使用
 
