@@ -267,7 +267,7 @@ void replaceRouteBelow<T extends Object>(
 /// ```
 /// {@end-tool}
 /// {@tool sample}
-bool pop([result]) {
+pop([result]) {
   return navGK.currentState.pop(result ?? '');
 }
 
