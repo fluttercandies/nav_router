@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// [Route animation effect]
+/// Size mode route jump animation.
+///
 class SizeRoute extends PageRouteBuilder {
   final Widget page;
   SizeRoute({this.page})

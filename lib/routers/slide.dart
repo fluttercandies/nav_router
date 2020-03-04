@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// [Route animation effect]
+/// Swipe right to route the jump animation.
+///
 class SlideRightRoute extends PageRouteBuilder {
   final Widget page;
   SlideRightRoute({this.page})

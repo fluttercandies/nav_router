@@ -6,6 +6,7 @@ import 'package:nav_router/src/util.dart';
 
 /// exitPage is generally itself
 /// enter page is the page you want to enter
+///
 Future<dynamic> routePushAdvance({
   @required Widget exitPage,
   @required Widget enterPage,

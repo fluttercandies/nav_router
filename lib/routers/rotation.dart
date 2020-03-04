@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// [Route animation effect]
+/// Rotation mode route jump animation.
+///
 class RotationRoute extends PageRouteBuilder {
   final Widget page;
   RotationRoute({this.page})

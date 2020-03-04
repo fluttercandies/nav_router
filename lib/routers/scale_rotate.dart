@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// [Route animation effect]
+/// Zoom and rotate mode route jump animation.
+/// 
 class ScaleRotateRoute extends PageRouteBuilder {
   final Widget page;
   ScaleRotateRoute({this.page})

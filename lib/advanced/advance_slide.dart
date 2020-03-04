@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// [Route animation effect]
+/// Advanced mode sliding transition mode route jump animation.
+///
 class AdvanceSlideRoute extends PageRouteBuilder {
   final Widget enterPage;
   final Widget exitPage;
