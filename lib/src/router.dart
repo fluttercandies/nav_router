@@ -12,7 +12,6 @@ Route cupertinoRoute(widget) {
     builder: (BuildContext context) => widget,
     settings: new RouteSettings(
       name: widget.toStringShort(),
-      isInitialRoute: false,
     ),
   );
 }
@@ -27,7 +26,6 @@ Route materialRoute(widget) {
     builder: (BuildContext context) => widget,
     settings: new RouteSettings(
       name: widget.toStringShort(),
-      isInitialRoute: false,
     ),
   );
 }
