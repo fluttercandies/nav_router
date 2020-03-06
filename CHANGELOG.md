@@ -13,3 +13,7 @@
 ## 0.0.4
 
 * fix pop bool type
+
+## 0.0.5
+
+* remove init page
