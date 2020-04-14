@@ -108,7 +108,9 @@ routePush(NewPage(navData: (v) {
 
 # Flutter WeChat group
 
-<img src="http://www.flutterj.com/content/uploadfile/201903/64821551854137.png" height="200" width="200" style="zoom:30%;" />
+<img src="git/left_group.png" height="200" width="200" style="zoom:30%;" />
+
+[Above can't show my point](http://www.flutterj.com/left_group.png)
 
 FlutterJ：www.flutterj.com
 
