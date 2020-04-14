@@ -16,7 +16,7 @@ class _RipplePageState extends State<RipplePage> {
         child: NavigateButton(
           nextScreen: RipplePage(),
           color: Colors.white,
-          splashColor: Colors.black,
+          splashColor: Colors.green,
           iconColor: Colors.black,
           heroTag: 'blue',
           rangeFactor: 2.4,

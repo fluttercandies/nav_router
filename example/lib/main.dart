@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
         splashColor: Colors.transparent,
         highlightColor: Color(0xfff9dc71),
       ),
-//      home: new MyHomePage(),
-      home: RipplePage()
+      home: new MyHomePage(),
+//      home: RipplePage()
 //      home: new ParamPage(),
     );
   }
