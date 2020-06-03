@@ -71,7 +71,7 @@ Future<dynamic> routePushName(String name) {
 ///  * [ModalRoute], which provides a `scopedWillPopCallback` that can be used
 ///    to define the route's `willPop` method.
 Future<dynamic> maybePop([result]) {
-  return navGK.currentState.maybePop(result ?? '');
+  return navGK.currentState.maybePop(result);
 }
 
 /// The routing stack is replaced by the routing name.
@@ -96,8 +96,7 @@ Future<dynamic> maybePop([result]) {
 /// ```
 /// {@end-tool}
 Future<dynamic> pushReplacementNamed(routeName, [result]) {
-  return navGK.currentState
-      .pushReplacementNamed(routeName, result: result ?? '');
+  return navGK.currentState.pushReplacementNamed(routeName, result: result);
 }
 
 /// Pop the current route off the navigator and push a named route in its
@@ -118,7 +117,7 @@ Future<dynamic> pushReplacementNamed(routeName, [result]) {
 /// ```
 /// {@end-tool}
 Future<dynamic> popAndPushNamed(name, [result]) {
-  return navGK.currentState.popAndPushNamed(name, result: result ?? '');
+  return navGK.currentState.popAndPushNamed(name, result: result);
 }
 
 /// Push the given route onto the navigator, and then remove all the previous
@@ -268,7 +267,7 @@ void replaceRouteBelow<T extends Object>(
 /// {@end-tool}
 /// {@tool sample}
 pop([result]) {
-  return navGK.currentState.pop(result ?? '');
+  return navGK.currentState.pop(result);
 }
 
 /// Whether the navigator can be popped.
