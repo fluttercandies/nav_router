@@ -17,3 +17,7 @@
 ## 0.0.5
 
 * remove init page
+
+## 0.0.6
+
+* remove null ?? ''
