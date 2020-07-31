@@ -13,12 +13,12 @@ class NavigateButton extends StatefulWidget {
 
   NavigateButton(
       {IconData icon = Icons.navigate_next,
-        Color color = Colors.blue,
-        Color splashColor = Colors.white,
-        Color iconColor = Colors.white,
-        Object heroTag = '',
-        double rangeFactor = 2.5,
-        @required this.nextScreen})
+      Color color = Colors.blue,
+      Color splashColor = Colors.white,
+      Color iconColor = Colors.white,
+      Object heroTag = '',
+      double rangeFactor = 2.5,
+      @required this.nextScreen})
       : icon = icon,
         color = color,
         splashColor = splashColor,
@@ -88,7 +88,7 @@ class _NavigateButtonState extends State<NavigateButton>
             top: top - widget.rangeFactor * screenHeight * _animation.value,
             right: right - widget.rangeFactor * screenHeight * _animation.value,
             bottom:
-            bottom - widget.rangeFactor * screenHeight * _animation.value,
+                bottom - widget.rangeFactor * screenHeight * _animation.value,
             child: Container(
               alignment: Alignment.center,
               decoration: BoxDecoration(
