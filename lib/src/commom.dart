@@ -196,6 +196,12 @@ void popToRootPage() {
   navGK.currentState.popUntil(ModalRoute.withName('/'));
 }
 
+/// You can pop to the existing page of the routing stack.
+///
+void popToPage(Widget page) {
+  popUntil(ModalRoute.withName(page.toStringShort()));
+}
+
 ///
 /// Calls [pop] repeatedly until the predicate returns true.
 ///
