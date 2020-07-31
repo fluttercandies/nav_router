@@ -21,3 +21,7 @@
 ## 0.0.6
 
 * remove null ?? ''
+
+## 0.0.7
+
+* add popToPage Method
