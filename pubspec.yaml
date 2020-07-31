@@ -15,8 +15,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-flutter:
-
-  plugin:
-    androidPackage: com.example.nav_router
-    pluginClass: NavRouterPlugin
+#flutter:
+#
+#  plugin:
+#    androidPackage: com.example.nav_router
+#    pluginClass: NavRouterPlugin
