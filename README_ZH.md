@@ -112,7 +112,7 @@ routePush(NewPage(navData: (v) {
 
 <img src="git/left_group.png" height="200" width="210" style="zoom:30%;" />
 
-[上图无法显示点我](git/left_group.png)
+[上图无法显示点我](http://www.flutterj.com/left_group.png)
 
 Flutter教程网：www.flutterj.com
 

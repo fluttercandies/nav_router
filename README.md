@@ -114,10 +114,10 @@ routePush(NewPage(navData: (v) {
 
 <img src="git/left_group.png" height="200" width="200" style="zoom:30%;" />
 
-[Above can't show my point](http://www.flutterj.com/left_group.png)
+[Above can't show my point](git/left_group.png)
 
 FlutterJ：www.flutterj.com
 
 # Contributor
 
-<img src="http://www.flutterj.com/circle-cropped.png" height="150" width="150" style="zoom:30%;" />
+<img src="git/circle-cropped.png" height="150" width="150" style="zoom:30%;" />
