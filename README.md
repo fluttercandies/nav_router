@@ -1,5 +1,9 @@
 Language: [English](README.md) | [中文简体](README_ZH.md)
 
+[![GitHub stars](https://img.shields.io/github/stars/fluttercandies/nav_router)](https://github.com/fluttercandies/nav_router/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/fluttercandies/nav_router)](https://github.com/fluttercandies/nav_router/network)
+[![GitHub issues](https://img.shields.io/github/issues/fluttercandies/nav_router)](https://github.com/fluttercandies/nav_router/issues) 
+
 # nav_router
 
 nav_router is the simplest / lightweight / convenient routing management solution for flutter. It supports various routing animations, and it is very convenient to jump / pass parameters. To jump to a new page, just routePush (NewPage ());
