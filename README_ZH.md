@@ -113,6 +113,7 @@ routePush(NewPage(navData: (v) {
 | --- | --- | --- |
 |![4.gif](git/4.gif)| ![5.gif](git/5.gif) | ![6.gif](git/6.gif)|
 |![7.gif](git/7.gif)| ![8.gif](git/8.gif) | ![9.gif](git/9.gif)|
+|![10.gif](git/10.gif)| ![11.gif](git/11.gif) | ![12.gif](git/12.gif)|
 
 # Flutter微信群
 
