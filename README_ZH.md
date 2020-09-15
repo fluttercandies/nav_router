@@ -108,7 +108,7 @@ routePush(NewPage(navData: (v) {
 );
 ```
 
-# 效果图
+# 效果图 [图片不能显示点我](http://img.flutterj.com/nav_router/)
 |![1.gif](git/1.gif)| ![2.gif](git/2.gif) | ![3.gif](git/3.gif)|
 | --- | --- | --- |
 |![4.gif](git/4.gif)| ![5.gif](git/5.gif) | ![6.gif](git/6.gif)|
