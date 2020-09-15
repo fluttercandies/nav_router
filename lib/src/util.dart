@@ -37,6 +37,12 @@ Route routerUtil({RouterType type, widget}) {
     case RouterType.scaleRotate:
       route = scaleRotate(widget);
       break;
+    case RouterType.scaleBottomRight:
+      route = scale(widget, Alignment.bottomRight);
+      break;
+    case RouterType.scaleTopLeft:
+      route = scale(widget, Alignment.topLeft);
+      break;
   }
 
   return route;

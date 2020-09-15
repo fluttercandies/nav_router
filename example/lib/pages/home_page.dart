@@ -17,6 +17,8 @@ class _MyHomePageState extends State<MyHomePage> {
     new RouteModel('size', RouterType.size),
     new RouteModel('fade', RouterType.fade),
     new RouteModel('scale', RouterType.scale),
+    new RouteModel('scaleBottomRight', RouterType.scaleBottomRight),
+    new RouteModel('scaleTopLeft', RouterType.scaleTopLeft),
     new RouteModel('slide', RouterType.slide),
     new RouteModel('rotation', RouterType.rotation),
     new RouteModel('scaleRotate', RouterType.scaleRotate),
@@ -52,14 +54,18 @@ class _MyHomePageState extends State<MyHomePage> {
             'NavRoute',
             style: TextStyle(color: Colors.blueAccent, fontSize: 30.0),
           ),
-          new SizedBox(height: 20.0),
-          new Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0),
-            child: new Wrap(
-              spacing: 10.0,
-              runSpacing: 10.0,
-              alignment: WrapAlignment.start,
-              children: data.map(buildItem).toList(),
+          new SizedBox(height: 10),
+          new Expanded(
+            child: new SingleChildScrollView(
+              child: new Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                child: new Wrap(
+                  spacing: 10.0,
+                  runSpacing: 10.0,
+                  alignment: WrapAlignment.start,
+                  children: data.map(buildItem).toList(),
+                ),
+              ),
             ),
           ),
         ],

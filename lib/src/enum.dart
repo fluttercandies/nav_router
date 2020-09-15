@@ -4,6 +4,8 @@ enum RouterType {
   cupertino,
   slide,
   scale,
+  scaleBottomRight,
+  scaleTopLeft,
   rotation,
   size,
   fade,
