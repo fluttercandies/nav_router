@@ -22,6 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
     new RouteModel('slide', RouterType.slide),
     new RouteModel('rotation', RouterType.rotation),
     new RouteModel('scaleRotate', RouterType.scaleRotate),
+//    new RouteModel('routePushAdvance', RouterType.scaleRotate),
   ];
 
   Widget buildItem(RouteModel item) {
