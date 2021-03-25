@@ -7,7 +7,7 @@ class AdvanceSlideRoute extends PageRouteBuilder {
   final Widget enterPage;
   final Widget exitPage;
 
-  AdvanceSlideRoute({this.exitPage, this.enterPage})
+  AdvanceSlideRoute({required this.exitPage,required  this.enterPage})
       : super(
           pageBuilder: (
             BuildContext context,

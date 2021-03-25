@@ -1,11 +1,12 @@
 name: nav_router
 description: flutter The lightest, easiest and most convenient route management!
-version: 0.0.7
+version: 1.0.0
 #author: crazyQ1 <zonggeu@gmail.com>
+#migrator: dwikyhardi <github.com/dwikyhardi>
 homepage: https://github.com/fluttercandies/nav_router
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.2 <3.0.0"
 
 dependencies:
   flutter:
