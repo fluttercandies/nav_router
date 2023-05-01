@@ -18,7 +18,7 @@ class NavigateButton extends StatefulWidget {
       Color iconColor = Colors.white,
       Object heroTag = '',
       double rangeFactor = 2.5,
-      @required this.nextScreen})
+      required this.nextScreen})
       : icon = icon,
         color = color,
         splashColor = splashColor,
@@ -32,8 +32,8 @@ class NavigateButton extends StatefulWidget {
 
 class _NavigateButtonState extends State<NavigateButton>
     with SingleTickerProviderStateMixin {
-  AnimationController _animationController;
-  Animation _animation;
+  late AnimationController _animationController;
+  late Animation _animation;
   final int time = 600;
 
   @override
@@ -70,7 +70,7 @@ class _NavigateButtonState extends State<NavigateButton>
   }
 
   Widget _ripple() {
-    final RenderBox box = context.findRenderObject();
+    final RenderBox box = context.findRenderObject() as RenderBox;
     final Offset target = box.localToGlobal(box.size.center(Offset.zero));
     final width = box.size.width;
     final height = box.size.height;
@@ -94,7 +94,7 @@ class _NavigateButtonState extends State<NavigateButton>
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: _animation.value > 0.65
-                    ? widget.splashColor.withOpacity(1 - _animation.value)
+                    ? widget.splashColor.withOpacity(1 - _animation.value as double)
                     : widget.splashColor,
               ),
               child: Icon(
@@ -107,7 +107,7 @@ class _NavigateButtonState extends State<NavigateButton>
   }
 
   Future showOverlay() async {
-    OverlayState overlayState = Overlay.of(context);
+    OverlayState overlayState = Overlay.of(context)!;
     OverlayEntry overlayEntry = OverlayEntry(builder: (context) => _ripple());
     overlayState.insert(overlayEntry);
     _animationController.forward();

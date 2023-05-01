@@ -9,9 +9,11 @@ Language: [English](README.md) | [中文简体](README_ZH.md)
 nav_router is the simplest / lightweight / convenient routing management solution for flutter. It supports various routing animations, and it is very convenient to jump / pass parameters. To jump to a new page, just routePush (NewPage ());
 
 # Log
-* 2020.07.04-Test Flutter 1.17.3
+* 2021.03.25 - Migrating to `nullSafety`
 
-* 2020.06.03-Cancel pop default empty string data
+* 2020.07.04 - Test Flutter 1.17.3
+
+* 2020.06.03 - Cancel pop default empty string data
 
 * 2020.02.28 - Fix pop method of dev branch flutter error.
 
@@ -20,7 +22,7 @@ nav_router is the simplest / lightweight / convenient routing management solutio
 ### Add dependency
 ```yaml
 dependencies:
-  nav_router: any #Specific version customization (any means latest)
+  nav_router: ^1.0.0
 ```
 
 > Related articles updated ...
@@ -125,7 +127,8 @@ FlutterJ：www.flutterj.com
 
 # Contributor
 
-<img src="git/circle-cropped.png" height="150" width="150" style="zoom:30%;" />
+* author: crazyQ1 [https://github.com/ahyangnb](https://github.com/ahyangnb)
+* migrator: dwikyhardi [github.com/dwikyhardi](github.com/dwikyhardi)
 
 ### LICENSE
 ```

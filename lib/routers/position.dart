@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class PositionRoute extends PageRouteBuilder {
   final Widget page;
 
-  PositionRoute({this.page})
+  PositionRoute({required this.page})
       : super(
           pageBuilder: (
             BuildContext context,

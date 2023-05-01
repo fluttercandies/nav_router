@@ -7,7 +7,7 @@ class ScaleRoute extends PageRouteBuilder {
   final Widget page;
   final Alignment alignment;
 
-  ScaleRoute({this.page, this.alignment = Alignment.center})
+  ScaleRoute({required this.page, this.alignment = Alignment.center})
       : super(
           pageBuilder: (
             BuildContext context,

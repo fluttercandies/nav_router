@@ -10,7 +10,7 @@ import 'package:nav_router/src/enum.dart';
 /// routerUtil(type: RouterType.material, widget: NewPage());
 /// ```
 ///
-Route routerUtil({RouterType type, widget}) {
+Route routerUtil({RouterType type = RouterType.material, widget}) {
   Route route;
   switch (type) {
     case RouterType.material:
@@ -55,7 +55,7 @@ Route routerUtil({RouterType type, widget}) {
 /// ```dart
 /// advanceUtil(type: AdvanceType.slide, exitPage: ExitPage(),enterPage: EnterPagePage());
 /// ```
-Route advanceUtil({AdvanceType type, exitPage, enterPage}) {
+Route advanceUtil({AdvanceType type = AdvanceType.slide, exitPage, enterPage}) {
   Route route;
   switch (type) {
     case AdvanceType.slide:

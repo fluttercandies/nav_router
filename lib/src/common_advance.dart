@@ -8,11 +8,15 @@ import 'package:nav_router/src/util.dart';
 /// enter page is the page you want to enter
 ///
 Future<dynamic> routePushAdvance({
-  @required Widget exitPage,
-  @required Widget enterPage,
+  required Widget exitPage,
+  required Widget enterPage,
   AdvanceType type = AdvanceType.slide,
 }) {
   Route route =
   advanceUtil(type: type, exitPage: exitPage, enterPage: enterPage);
-  return navGK.currentState.push(route);
+  if(navGK.currentState != null){
+    return navGK.currentState!.push(route);
+  }else{
+    throw 'Current State is null';
+  }
 }

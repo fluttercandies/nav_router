@@ -29,7 +29,11 @@ final navGK = new GlobalKey<NavigatorState>();
 Future<dynamic> routePush(Widget page,
     [RouterType type = RouterType.cupertino]) {
   Route route = routerUtil(type: type, widget: page);
-  return navGK.currentState.push(route);
+  if(navGK.currentState != null){
+    return navGK.currentState!.push(route);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// The route is redirected by the route name,
@@ -53,7 +57,11 @@ Future<dynamic> routePush(Widget page,
 /// ```
 /// {@end-tool}
 Future<dynamic> routePushName(String name) {
-  return navGK.currentState.pushNamed(name);
+  if(navGK.currentState != null){
+    return navGK.currentState!.pushNamed(name);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// Whether the route can be popped out of the stack,
@@ -71,7 +79,11 @@ Future<dynamic> routePushName(String name) {
 ///  * [ModalRoute], which provides a `scopedWillPopCallback` that can be used
 ///    to define the route's `willPop` method.
 Future<dynamic> maybePop([result]) {
-  return navGK.currentState.maybePop(result);
+  if(navGK.currentState != null){
+    return navGK.currentState!.maybePop(result);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// The routing stack is replaced by the routing name.
@@ -96,7 +108,11 @@ Future<dynamic> maybePop([result]) {
 /// ```
 /// {@end-tool}
 Future<dynamic> pushReplacementNamed(routeName, [result]) {
-  return navGK.currentState.pushReplacementNamed(routeName, result: result);
+  if(navGK.currentState != null){
+    return navGK.currentState!.pushReplacementNamed(routeName, result: result);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// Pop the current route off the navigator and push a named route in its
@@ -117,7 +133,11 @@ Future<dynamic> pushReplacementNamed(routeName, [result]) {
 /// ```
 /// {@end-tool}
 Future<dynamic> popAndPushNamed(name, [result]) {
-  return navGK.currentState.popAndPushNamed(name, result: result);
+  if(navGK.currentState != null){
+    return navGK.currentState!.popAndPushNamed(name, result: result);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// Push the given route onto the navigator, and then remove all the previous
@@ -141,16 +161,22 @@ Future<dynamic> popAndPushNamed(name, [result]) {
 Future<dynamic> pushAndRemoveUntil(Widget page,
     [RouterType type = RouterType.cupertino]) {
   Route route = routerUtil(type: type, widget: page);
-  return navGK.currentState
-      .pushAndRemoveUntil(route, (Route<dynamic> route) => false);
+  if(navGK.currentState != null){
+    return navGK.currentState!.pushAndRemoveUntil(route, (Route<dynamic> route) => false);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 ///```dart
 /// pushNamedAndRemoveUntil("/screen4",ModalRoute.withName('/')
 /// ```
 Future<dynamic> pushNamedAndRemoveUntil(String newRouteName) {
-  return navGK.currentState
-      .pushNamedAndRemoveUntil(newRouteName, (Route<dynamic> route) => false);
+  if(navGK.currentState != null){
+    return navGK.currentState!.pushNamedAndRemoveUntil(newRouteName, (Route<dynamic> route) => false);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// Replace the current route of the navigator by pushing the given route and
@@ -173,7 +199,11 @@ Future<dynamic> pushNamedAndRemoveUntil(String newRouteName) {
 Future<dynamic> pushReplacement(Widget page,
     [RouterType type = RouterType.cupertino]) {
   Route route = routerUtil(type: type, widget: page);
-  return navGK.currentState.pushReplacement(route);
+  if(navGK.currentState != null){
+    return navGK.currentState!.pushReplacement(route);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// Calls [pop] repeatedly until the predicate returns true.
@@ -193,7 +223,11 @@ Future<dynamic> pushReplacement(Widget page,
 ///
 /// This method pops directly to the root page
 void popToRootPage() {
-  navGK.currentState.popUntil(ModalRoute.withName('/'));
+  if(navGK.currentState != null){
+    navGK.currentState!.popUntil(ModalRoute.withName('/'));
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// You can pop to the existing page of the routing stack.
@@ -211,14 +245,22 @@ void popToPage(Widget page) {
 ///   popUntil(ModalRoute.withName('/login'));
 /// ```
 void popUntil(RoutePredicate predicate) {
-  return navGK.currentState.popUntil(predicate);
+  if(navGK.currentState != null){
+    return navGK.currentState!.popUntil(predicate);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// Immediately remove `route` from the navigator, and [Route.dispose] it.
 ///
 /// {@macro flutter.widgets.navigator.removeRoute}
 void removeRoute(Route<dynamic> route) {
-  return navGK.currentState.removeRoute(route);
+  if(navGK.currentState != null){
+    return navGK.currentState!.removeRoute(route);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// Immediately remove a route from the navigator, and [Route.dispose] it. The
@@ -226,7 +268,11 @@ void removeRoute(Route<dynamic> route) {
 ///
 /// {@macro flutter.widgets.navigator.removeRouteBelow}
 void removeRouteBelow(Route<dynamic> anchorRoute) {
-  return navGK.currentState.removeRouteBelow(anchorRoute);
+  if(navGK.currentState != null){
+    return navGK.currentState!.removeRouteBelow(anchorRoute);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// Replaces a route on the navigator with a new route.
@@ -238,8 +284,12 @@ void removeRouteBelow(Route<dynamic> anchorRoute) {
 ///  * [replaceRouteBelow], which is the same but identifies the route to be
 ///    removed by reference to the route above it, rather than directly.
 void replaceRouter<T extends Object>(
-    {@required Route<dynamic> oldRoute, @required Route<T> newRoute}) {
-  return navGK.currentState.replace(oldRoute: oldRoute, newRoute: newRoute);
+    {required Route<dynamic> oldRoute, required Route<T> newRoute}) {
+  if(navGK.currentState != null){
+    return navGK.currentState!.replace(oldRoute: oldRoute, newRoute: newRoute);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// Replaces a route on the navigator with a new route. The route to be
@@ -252,9 +302,12 @@ void replaceRouter<T extends Object>(
 ///  * [replace], which is the same but identifies the route to be removed
 ///    directly.
 void replaceRouteBelow<T extends Object>(
-    {@required Route<dynamic> anchorRoute, Route<T> newRoute}) {
-  return navGK.currentState
-      .replaceRouteBelow(anchorRoute: anchorRoute, newRoute: newRoute);
+    {required Route<dynamic> anchorRoute,required Route<T> newRoute}) {
+  if(navGK.currentState != null){
+    return navGK.currentState!.replaceRouteBelow(anchorRoute: anchorRoute, newRoute: newRoute);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// Pop the top-most route off the navigator.
@@ -273,7 +326,11 @@ void replaceRouteBelow<T extends Object>(
 /// {@end-tool}
 /// {@tool sample}
 pop([result]) {
-  return navGK.currentState.pop(result);
+  if(navGK.currentState != null){
+    return navGK.currentState!.pop(result);
+  }else{
+    throw 'Current State is null';
+  }
 }
 
 /// Whether the navigator can be popped.
@@ -285,5 +342,9 @@ pop([result]) {
 ///  * [Route.isFirst], which returns true for routes for which [canPop]
 ///    returns false.
 bool canPop() {
-  return navGK.currentState.canPop();
+  if(navGK.currentState != null){
+    return navGK.currentState!.canPop();
+  }else{
+    throw 'Current State is null';
+  }
 }
